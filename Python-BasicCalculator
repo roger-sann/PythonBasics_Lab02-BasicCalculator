@@ -1,0 +1,74 @@
+# Calculadora em Python
+
+# Desenvolva uma calculadora em Python com tudo que você aprendeu nos capítulos 2 e 3. 
+# A solução será apresentada no próximo capítulo!
+# Assista o vídeo com a execução do programa!
+
+
+
+# Python Calculator
+
+# Opening message
+
+print('\n###########################   PYTHON CALCULATOR  ###########################')
+
+
+# Function definitions (for each input option)
+def add(input1, input2):
+    return input1 + input2
+
+def subtract(input1, input2):
+    return input1 - input2
+
+def multiply(input1, input2):
+    return input1 * input2
+               
+def divide(input1, input2):
+    return input1 / input2
+
+# Mathematical operations menu
+print('\nSelect the desired math operation: \n')
+
+# Input options message
+print('1 - Sum')
+print('2 - Subtraction')
+print('3 - Multiplication')
+print('4 - Division')
+
+      
+# Option entry message:
+option = input('\nEnter one of the listed options (1/2/3/4): ')
+
+# Conditionals
+if option == '1':
+    input1 = int(input('\nEnter the first value: '))
+    input2 = int(input('\nEnter the second value: '))
+    print('\n')
+    print(input1, '+', input2, '=', add(input1, input2))
+    print('\n')
+
+elif option == '2':
+    input1 = int(input('\nEnter the first value: '))
+    input2 = int(input('\nEnter the second value: ')
+    print('\n')
+    print(input1, '-', input2, '=', subtract(input1, input2))
+    print('\n')
+
+elif option == '3':
+    input1 = int(input('\nEnter the first value: '))
+    input2 = int(input('\nEnter the second value: ')
+    print('\n')
+    print(input1, '*', input2, '=', multiply(input1, input2))
+    print('\n')
+
+elif option == '4':
+    input1 = int(input('\nEnter the first value: '))
+    input2 = int(input('\nEnter the second value: ')
+    print('\n')
+    print(input1, '/', input2, '=', divide(input1, input2))
+    print('\n')
+    
+else:
+    print('\n')
+    print('\n********* ERROR *********\nInvalid Option\n')
+    print('\n')
